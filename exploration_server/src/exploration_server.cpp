@@ -140,6 +140,7 @@ bool ExplorationServer::inBoundary()
     return false;
   // get current robot pose in frame of exploration boundary
   tf::Stamped<tf::Pose> robot_pose;
+  // geometry_msgs::PoseStamped robot_pose;
   costmap_ros_->getRobotPose(robot_pose);
   geometry_msgs::PoseStamped pose1;
   tf::poseStampedTFToMsg(robot_pose, pose1);

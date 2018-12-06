@@ -3,6 +3,7 @@
 
 #include <exploration_server/base_plugin.h>
 #include <costmap_2d/costmap_2d_ros.h>
+#include <costmap_2d/costmap_2d.h>
 #include <actionlib/server/simple_action_server.h>
 #include <actionlib/client/simple_action_client.h>
 #include <exploration_msgs/ExploreAction.h>
@@ -10,6 +11,7 @@
 #include <move_base_msgs/MoveBaseAction.h>
 
 #include <ros/ros.h>
+#include <tf/transform_listener.h>
 
 namespace exploration_server
 {
